@@ -463,10 +463,7 @@ section.hero {
 .page-footer .container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-address {
-  margin-right: 70px;
+  justify-content: space-between;
 }
 
 .page-footer .logo {
@@ -551,9 +548,7 @@ section.hero {
 .footer-socials:focus {
   background-color: var(--accent-color);
 }
-.fotter-subscription {
-  margin-left: 40px;
-}
+
 .fotter-form {
   display: flex;
 }
