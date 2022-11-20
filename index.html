@@ -24,7 +24,9 @@
       <div class="container">
         <div class="header-container">
           <nav class="main-nav">
-            <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+            <a href="./index.html" class="logo"
+              ><span class="accent">Web</span>Studio</a
+            >
 
             <ul class="site-nav list">
               <li class="item">
@@ -62,7 +64,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -78,7 +82,8 @@
               </div>
               <h3 class="benefits-title">Увага до деталей</h3>
               <p class="benefits-text">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
             <li class="item">
@@ -89,7 +94,8 @@
               </div>
               <h3 class="benefits-title">Пунктуальність</h3>
               <p class="benefits-text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
             <li class="item">
@@ -111,7 +117,8 @@
               </div>
               <h3 class="benefits-title">Сучасні технології</h3>
               <p class="benefits-text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
@@ -123,7 +130,11 @@
           <h2 class="section-title">Чим ми займаємось</h2>
           <ul class="tasks-list list">
             <li class="item">
-              <img src="./images/img1.jpg" alt="Програміст набирає код на клавіатурі" width="370" />
+              <img
+                src="./images/img1.jpg"
+                alt="Програміст набирає код на клавіатурі"
+                width="370"
+              />
               <div class="tasks-overlay">
                 <p class="tasks-text">Десктопні додатки</p>
               </div>
@@ -139,7 +150,11 @@
               </div>
             </li>
             <li class="item">
-              <img src="./images/img3.jpg" alt="Дизайнер вибирає палітру кольорів" width="370" />
+              <img
+                src="./images/img3.jpg"
+                alt="Дизайнер вибирає палітру кольорів"
+                width="370"
+              />
               <div class="tasks-overlay">
                 <p class="tasks-text">Дизайнерські рішення</p>
               </div>
@@ -263,7 +278,11 @@
               </div>
             </li>
             <li class="comand-card">
-              <img src="./images/img24.jpg" alt="Дизайнер користувацького інтерфейсу" width="270" />
+              <img
+                src="./images/img24.jpg"
+                alt="Дизайнер користувацького інтерфейсу"
+                width="270"
+              />
               <div class="comand-desc">
                 <h3 class="comand-title">Михайло Єрмаков</h3>
                 <p lang="en" class="comand-text">UI Designer</p>
@@ -355,7 +374,9 @@
     <footer class="page-footer">
       <div class="container">
         <div class="footer-address">
-          <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link"
+            ><span class="accent">Web</span>Studio</a
+          >
           <address>
             <ul class="list">
               <li class="item">
@@ -368,10 +389,14 @@
                 >
               </li>
               <li class="item">
-                <a href="mailto:info@devstudio.com" class="contacts link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="contacts link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="item">
-                <a href="tel:+380961111111" class="contacts link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="contacts link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -409,6 +434,19 @@
             </li>
           </ul>
         </div>
+        <div>
+          <p class="footer-text">Підпишіться на розсилку</p>
+          <div>
+            <label for=""></label>
+            <input type="mail" placeholder="E-mail" />
+            <button type="submit">
+              Підписатися
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -419,6 +457,69 @@
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
         </button>
+        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <form name="contact-form">
+          <label class="form-label" for="person-name">Ім'я</label>
+          <div class="form-control">
+            <input
+              class="form-input"
+              id="person-name"
+              type="text"
+              name="person-name"
+            />
+            <svg class="form-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="person-phone">Телефон</label>
+          <div class="form-control">
+            <input
+              class="form-input"
+              id="person-phone"
+              type="tel"
+              name="person-phone"
+            />
+            <svg class="form-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="person-mail">Пошта</label>
+          <div class="form-control">
+            <input
+              class="form-input"
+              id="person-mail"
+              type="email"
+              name="person-mail"
+            />
+            <svg class="form-icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="person-comment">Коментар</label>
+          <textarea
+            class="form-textarea"
+            id="person-comment"
+            name="person-comment"
+            placeholder="Введіть текст"
+          ></textarea>
+
+          <input
+            class="checkbox-input visually-hidden"
+            id="terms-checkbox"
+            type="checkbox"
+            name="terms-checkbox"
+          />
+          <label class="checkbox-label" for="terms-checkbox">
+            Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a>
+          </label>
+
+          <button class="form-button primary-button" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
 
