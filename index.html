@@ -64,7 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>
+          <button type="button" class="primary-button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -434,18 +434,24 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="fotter-subscription">
           <p class="footer-text">Підпишіться на розсилку</p>
-          <div>
-            <label for=""></label>
-            <input type="mail" placeholder="E-mail" />
-            <button type="submit">
+          <form class="fotter-form">
+            <label for="fotter-mail"></label>
+            <input
+              class="fotter-mail"
+              type="mail"
+              id="fotter-mail"
+              placeholder="E-mail"
+              name="fotter-mail"
+            />
+            <button class="fotter-btn" type="submit">
               Підписатися
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -457,7 +463,7 @@
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
         </button>
-        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form name="contact-form">
           <label class="form-label" for="person-name">Ім'я</label>
           <div class="form-control">
@@ -511,9 +517,13 @@
             type="checkbox"
             name="terms-checkbox"
           />
+
           <label class="checkbox-label" for="terms-checkbox">
             Погоджуюся з розсилкою та приймаю
-            <a href="#">Умови договору</a>
+            <a class="accent" href="#">Умови договору</a>
+            <svg width="16" height="15">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
           </label>
 
           <button class="form-button primary-button" type="submit">

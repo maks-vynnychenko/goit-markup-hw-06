@@ -128,7 +128,7 @@ img {
 .site-nav .link.current::after {
   position: absolute;
   bottom: -1px;
-  content: '';
+  content: "";
   display: block;
   height: 4px;
   width: 100%;
@@ -156,7 +156,8 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
@@ -191,7 +192,11 @@ section.hero {
   max-width: 1600px;
   margin: 0 auto;
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -208,7 +213,7 @@ section.hero {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.hero-button {
+.primary-button {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
@@ -224,11 +229,12 @@ section.hero {
 
   border-radius: 4px;
   border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover,
-.hero-button:focus {
+.primary-button:hover,
+.primary-button:focus {
   background-color: var(--accent-hero-color);
 }
 
@@ -434,7 +440,8 @@ section.hero {
 
   fill: var(--icon-color);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -517,6 +524,15 @@ section.hero {
   height: 44px;
 }
 
+.page-footer .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page-footer .link:hover,
+.page-footer .link:focus {
+  color: var(--accent-color);
+}
+
 .footer-socials {
   display: flex;
   align-items: center;
@@ -535,6 +551,69 @@ section.hero {
 .footer-socials:focus {
   background-color: var(--accent-color);
 }
+.fotter-subscription {
+  margin-left: 40px;
+}
+.fotter-form {
+  display: flex;
+}
+
+.fotter-mail {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  outline: none;
+}
+
+.fotter-mail:hover,
+.fotter-mail:focus {
+  border-color: var(--accent-color);
+}
+
+.fotter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 28px;
+
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  fill: var(--white-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fotter-btn:hover,
+.fotter-btn:focus {
+  background-color: var(--accent-hero-color);
+}
 
 .btn-list {
   display: flex;
@@ -544,15 +623,6 @@ section.hero {
 
 .btn-list .item:not(:last-child) {
   margin-right: 8px;
-}
-
-.page-footer .link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page-footer .link:hover,
-.page-footer .link:focus {
-  color: var(--accent-color);
 }
 
 .button-portfolio {
@@ -569,7 +639,8 @@ section.hero {
   padding: 6px 22px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -701,9 +772,10 @@ section.hero {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  max-height: 581px;
   background-color: var(--white-color);
+  padding: 40px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -724,4 +796,118 @@ section.hero {
   border-radius: 50%;
 
   fill: #000000;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+
+.form-control:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-textarea {
+  width: 100%;
+  height: 120px;
+
+  padding: 12px;
+  margin-bottom: 20px;
+  resize: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--secondary-text-color);
+}
+
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  content: "";
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
 }
