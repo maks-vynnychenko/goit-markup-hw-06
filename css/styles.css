@@ -873,13 +873,6 @@ section.hero {
   border-color: var(--accent-color);
 }
 
-.form-terms {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
 .checkbox-input {
   appearance: none;
 }
@@ -905,6 +898,7 @@ section.hero {
   justify-content: center;
   align-items: center;
   gap: 7px;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: 14px;
