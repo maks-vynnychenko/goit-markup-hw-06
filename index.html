@@ -510,22 +510,21 @@
             name="person-comment"
             placeholder="Введіть текст"
           ></textarea>
-
-          <input
-            class="checkbox-input visually-hidden"
-            id="terms-checkbox"
-            type="checkbox"
-            name="terms-checkbox"
-          />
-
-          <label class="checkbox-label" for="terms-checkbox">
-            Погоджуюся з розсилкою та приймаю
-            <a class="accent" href="#">Умови договору</a>
-            <svg width="16" height="15">
-              <use href="./images/sprite.svg#icon-check"></use>
-            </svg>
-          </label>
-
+          <div class="form-terms">
+            <label class="checkbox-label" for="terms-checkbox">
+              <input
+                class="checkbox-input visually-hidden"
+                id="terms-checkbox"
+                type="checkbox"
+                name="terms-checkbox"
+              />
+              <svg class="icon-checkbox" width="16" height="15">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю
+              <a class="accent" href="#">Умови договору</a>
+            </label>
+          </div>
           <button class="form-button primary-button" type="submit">
             Відправити
           </button>
