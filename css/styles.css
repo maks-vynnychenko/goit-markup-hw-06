@@ -873,32 +873,44 @@ section.hero {
   border-color: var(--accent-color);
 }
 
+.form-terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .checkbox-input {
   appearance: none;
 }
 
+.icon-checkbox {
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+
+  fill: transparent;
+}
+
+.checkbox-input:checked + .icon-checkbox {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+  border: transparent;
+}
+
 .checkbox-label {
-  display: block;
-  position: relative;
-  padding-left: 28px;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
   color: var(--secondary-text-color);
-}
-
-.checkbox-label::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid gray;
-  border-radius: 2px;
-  content: "";
 }
 
 .form-button {
